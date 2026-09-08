@@ -29,7 +29,7 @@
     <title>Frontend Mentor | Four card feature section</title>
 
     <!-- local stylesheet -->
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main class="main">
@@ -45,35 +45,63 @@
       </header>
 
       <div class="cards-container">
-        <section>
-          <h2>Supervisor</h2>
-          <p>Monitors activity to identify project roadblocks</p>
-          <img
-            src="./images/icon-supervisor.svg"
-            alt="A magnifying glass with an eye."
-          />
+        <section class="card">
+          <div class="card-grid supervisor">
+            <header class="card-header">
+              <h2>Supervisor</h2>
+              <p>Monitors activity to identify project roadblocks</p>
+            </header>
+            <img
+              class="card-icon"
+              src="./images/icon-supervisor.svg"
+              alt="A magnifying glass with an eye."
+            />
+          </div>
         </section>
-        <section>
-          <h2>Team Builder</h2>
-          <p>
-            Scans our talent network to create the optimal team for your project
-          </p>
-          <img
-            src="./images/icon-team-builder.svg"
-            alt="A web browser and a house."
-          />
+        <section class="card">
+          <div class="card-grid team-builder">
+            <header class="card-header">
+              <h2>Team Builder</h2>
+              <p>
+                Scans our talent network to create the optimal team for your
+                project
+              </p>
+            </header>
+            <img
+              class="card-icon"
+              src="./images/icon-team-builder.svg"
+              alt="A web browser and a house."
+            />
+          </div>
         </section>
-        <section>
-          <h2>Karma</h2>
-          <p>Regularly evaluates our talent to ensure quality</p>
-          <img src="./images/icon-karma.svg" alt="A light bulb." />
+        <section class="card">
+          <div class="card-grid karma">
+            <header class="card-header">
+              <h2>Karma</h2>
+              <p>Regularly evaluates our talent to ensure quality</p>
+            </header>
+            <img
+              class="card-icon"
+              src="./images/icon-karma.svg"
+              alt="A light bulb."
+            />
+          </div>
         </section>
-        <section>
-          <h2>Calculator</h2>
-          <p>
-            Uses data from past projects to provide better delivery estimates
-          </p>
-          <img src="./images/icon-calculator.svg" alt="A computer." />
+        <section class="card">
+          <div class="card-grid calculator">
+            <header class="card-header">
+              <h2>Calculator</h2>
+              <p>
+                Uses data from past projects to provide better delivery
+                estimates
+              </p>
+            </header>
+            <img
+              class="card-icon"
+              src="./images/icon-calculator.svg"
+              alt="A computer."
+            />
+          </div>
         </section>
       </div>
     </main>
