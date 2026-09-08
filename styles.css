@@ -129,13 +129,14 @@
 
 
 /* -----      WIDE SCREEN LAYOUT
- - From 1184px screen-width and wider
+ - From 1024px screen-width and wider
 */
-@media screen and (min-width: 74rem) {
+@media screen and (min-width: 64rem) {
   .main {
     /* vertical center arrangement */
     min-height: 100vh;
     justify-content: center;
+    padding-inline: 3em;
   }
   .cards-container {
     /* desktop layout */
