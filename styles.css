@@ -24,11 +24,11 @@
   margin: 0;
 }
 
+
 /* -----     MOBILE-FIRST
  - 
  - Responsive values includes wide screen sizes.
 */
-
 /* ---  MAIN      */
 .main {
   background-color: var(--White);
@@ -113,17 +113,50 @@
 }
 
 /* Cards' colored top-border */
-.card-grid.supervisor {
+.supervisor > .card-grid {
   border-block-start: 0.4em solid var(--Cyan);
 }
-.card-grid.team-builder {
+.team-builder > .card-grid {
   border-block-start: 0.4em solid var(--Red);
 }
-.card-grid.karma {
+.karma > .card-grid {
   border-block-start: 0.4em solid var(--Orange);
 }
-.card-grid.calculator {
+.calculator > .card-grid {
   border-block-start: 0.4em solid var(--Blue);
 }
-
 /* -----     end of: MOBILE-FIRST     */
+
+
+/* -----      WIDE SCREEN LAYOUT
+ - From 1184px screen-width and wider
+*/
+@media screen and (min-width: 74rem) {
+  .main {
+    /* vertical center arrangement */
+    min-height: 100vh;
+    justify-content: center;
+  }
+  .cards-container {
+    /* desktop layout */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "supervisor team-builder calculator"
+      "supervisor karma calculator";
+    align-items: center;
+  }
+  .supervisor {
+    grid-area: supervisor;
+  }
+  .team-builder {
+    grid-area: team-builder;
+  }
+  .karma {
+    grid-area: karma;
+  }
+  .calculator {
+    grid-area: calculator;
+  }
+}
+/* -----    end of: WIDE SCREEN LAYOUT     */

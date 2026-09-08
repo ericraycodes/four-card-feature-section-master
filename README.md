@@ -67,8 +67,30 @@ I learned more on **CSS Grid**. It was good to learn how it can work well with *
   place-self: center end;
 }
 ```
+```css
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "supervisor team-builder calculator"
+      "supervisor karma calculator";
+    align-items: center;
+  }
+  .supervisor {
+    grid-area: supervisor;
+  }
+  .team-builder {
+    grid-area: team-builder;
+  }
+  .karma {
+    grid-area: karma;
+  }
+  .calculator {
+    grid-area: calculator;
+  }
+```
 
-I discovered that a **negative** *spread radius* on *box-shadows* can make the shadows look more controlled and neat - my perspective, depending on visual use.
+I discovered that a **negative** *spread radius* on *box-shadows* can make the shadows look neat - my perspective, depending on visual use.
 
 ```css
   box-shadow: 0 0.67em 1.25em -0.25em var(--shadow-color);
