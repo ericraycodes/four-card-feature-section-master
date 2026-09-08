@@ -14,3 +14,54 @@
   /* Body font size */
   --body-15px: calc((15/16)*1rem);
 }
+
+/* ---  INITIAL RULES    */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+/* -----     MOBILE-FIRST     */
+
+/* ---  MAIN      */
+.main {
+    background-color: var(--White);
+
+    /* typography */
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: var(--body-15px);
+    color: var(--Grey-500);
+
+    /* arrange content */
+    padding-block-start: 3em;
+    padding-block-end: 2em;
+    padding-inline: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+
+    /* dimension */
+    min-width: 20rem; /* 320px */
+}
+
+/* --- HEADER     */
+.header {
+    text-align: center;
+
+    /* arrange content */
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.main-heading {
+    font-size: 1.5rem;
+}
+.not-bold {
+    font-weight: 200;
+}
+.main-description {
+    /* font-weight: 600; */
+}
+
+/* -----     end of: MOBILE-FIRST     */
